@@ -61,18 +61,9 @@ public class CustomerController {
         return String.valueOf(id);
     }
 
-    /*
-    删除用户
-     */
-    @RequestMapping(value = "/delete")
-    @ResponseBody
-    public void delete(HttpServletRequest request, HttpServletResponse response){
-        String id = request.getParameter("id");
-        customerService.delete(Integer.valueOf(id));
-    }
 
     /*
-    获取最新插入的用户
+    获取最新插入的用户ID
      */
     @RequestMapping(value = "/getId")
     @ResponseBody
