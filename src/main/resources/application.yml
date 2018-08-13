@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.99.100:3306/sakila?characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+mybatis:
+  config-location: classpath:mybatis.cfg.xml
+  type-aliases-package: com.hand.domain.entity
+  mapper-locations: com/hand/infra/mapper/*Mapper.xml
+
+pagehelper:
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+  helper-dialect: mysql
+
+# logback打印日志
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.hand: DEBUG
+
+
+

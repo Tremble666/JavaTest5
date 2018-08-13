@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.infra.mapper.CustomerMapper">
+  <resultMap id="BaseResultMap" type="com.hand.domain.entity.Customer">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="customer_id" jdbcType="SMALLINT" property="customer_id" />
+    <result column="store_id" jdbcType="TINYINT" property="store_id" />
+    <result column="first_name" jdbcType="VARCHAR" property="first_name" />
+    <result column="last_name" jdbcType="VARCHAR" property="last_name" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="address_id" jdbcType="SMALLINT" property="address_id" />
+    <result column="active" jdbcType="BIT" property="active" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="create_date" />
+    <result column="last_update" jdbcType="TIMESTAMP" property="last_update" />
+  </resultMap>
+</mapper>
