@@ -16,6 +16,8 @@ services:
       - mysql-1
     links:
       - mysql-1
+    ports:
+      - "8082:8082"
     environment:
       ip: 192.168.99.100
       port: 3306

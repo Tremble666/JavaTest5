@@ -18,4 +18,5 @@ public interface CustomerService {
     //删除一个用户
     void delete(int id);
 
+    int getId();
 }

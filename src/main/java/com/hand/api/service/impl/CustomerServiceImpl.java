@@ -49,4 +49,9 @@ public class CustomerServiceImpl implements CustomerService {
         c.setCustomer_id((short)id);
         mapper.delete(c);
     }
+
+    public int getId() {
+        List<Customer> cus = mapper.selectAll();
+        return cus.get(cus.size()-1).getCustomer_id();
+    }
 }

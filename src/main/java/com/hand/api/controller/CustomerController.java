@@ -25,8 +25,6 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    private int id;
-
     /*
     登陆检查的控制器
      */
@@ -50,7 +48,6 @@ public class CustomerController {
         int id = customerService.insert(c);
         System.out.println("customer:"+c);
         System.out.println("id:"+id);
-        this.id = id;
         return String.valueOf(id);
     }
 
@@ -74,10 +71,14 @@ public class CustomerController {
         customerService.delete(Integer.valueOf(id));
     }
 
+    /*
+    获取最新插入的用户
+     */
     @RequestMapping(value = "/getId")
     @ResponseBody
     public String getId(){
-       return String.valueOf(this.id);
+        int id = customerService.getId();
+        return String.valueOf(id);
     }
 
 }
