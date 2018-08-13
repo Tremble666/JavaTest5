@@ -10,8 +10,7 @@ echo "$res"
 
 echo "-------3-------"
 echo "3 测试put类型的Person新增接口，获取返回的customer_id"
-curl -s -v -X PUT -d "store_id=1&first_name=MARY&last_name=SMITH&email=haha@dd.dd&address_id=5&create_date=2006-02-14 22:04:36&last_update=2006-02-15 04:57:20&active=1" "http://localhost:8082/customer/insert"
-Id=$(curl -s "http://localhost:8082/customer/getId")
+Id=$(curl -s -v -X PUT -d "store_id=1&first_name=MARY&last_name=SMITH&email=haha@dd.dd&address_id=5&create_date=2006-02-14 22:04:36&last_update=2006-02-15 04:57:20&active=1" "http://localhost:8082/customer/insert")
 echo "return id：$Id"
 
 echo "-------4-------"
@@ -21,7 +20,7 @@ echo "update successs"
 
 echo "-------5-------"
 echo "5 测试delete类型的Person删除接口"
-curl -v -X DELETE -d "id=$Id" "http://localhost:8082/customer/delete"
+curl -s "http://localhost:8082/customer/delete?id=$Id"
 echo "delete successs"
 
 echo "-----end-----"
