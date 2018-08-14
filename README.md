@@ -7,7 +7,8 @@ Springboot + Mybatis + SpringMVC
 运行指令 'bash stop.sh'
 
 ## 说明几点问题
-程序能正常跑通，参照如下运行结果
+程序能正常跑通，但运行时请老师把shell脚本文件的line seperator设置为LF
+运行结果如下:
 
 $ bash curl.sh
 begin...
