@@ -12,8 +12,10 @@ Springboot + Mybatis + SpringMVC
 $ bash curl.sh
 begin...
 
+
 1. 测试Post类型的Customer登录接口
 login success!
+
 
 -------2-------
 2. 测试list类型的Film分页接口
