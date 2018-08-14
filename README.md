@@ -11,10 +11,12 @@ Springboot + Mybatis + SpringMVC
 
 $ bash curl.sh
 begin...
-1 测试Post类型的Customer登录接口
+
+1. 测试Post类型的Customer登录接口
 login success!
+
 -------2-------
-2 测试list类型的Film分页接口
+2. 测试list类型的Film分页接口
 [{"film_id":1,"title":"ACADEMY DINOSAUR","description":"A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies","release_year":"2006-01-01","language_id":1,"original_language_id":null,"rental_duratio
 n":6,"rental_rate":0.99,"length":86,"replacement_cost":20.99,"rating":"PG","special_features":"Deleted Scenes,Behind the Scenes","last_update":"2006-02-15 05:03:42.0"},{"film_id":2,"title":"ACE GOLDFINGER","description":"A Astounding Epistle
  of a Database Administrator And a Explorer who must Find a Car in Ancient China","release_year":"2006-01-01","language_id":1,"original_language_id":null,"rental_duration":3,"rental_rate":4.99,"length":48,"replacement_cost":12.99,"rating":"G
@@ -32,8 +34,9 @@ gth":62,"replacement_cost":28.99,"rating":"PG-13","special_features":"Trailers,D
 guage_id":null,"rental_duration":3,"rental_rate":2.99,"length":114,"replacement_cost":21.99,"rating":"PG-13","special_features":"Trailers,Deleted Scenes","last_update":"2006-02-15 05:03:42.0"},{"film_id":10,"title":"ALADDIN CALENDAR","descri
 ption":"A Action-Packed Tale of a Man And a Lumberjack who must Reach a Feminist in Ancient China","release_year":"2006-01-01","language_id":1,"original_language_id":null,"rental_duration":6,"rental_rate":4.99,"length":63,"replacement_cost":
 24.99,"rating":"NC-17","special_features":"Trailers,Deleted Scenes","last_update":"2006-02-15 05:03:42.0"}]
+
 -------3-------
-3 测试put类型的Customer新增接口，获取返回的customer_id
+3. 测试put类型的Customer新增接口，获取返回的customer_id
 * timeout on name lookup is not supported
 *   Trying 192.168.99.100...
 * Connected to 192.168.99.100 (192.168.99.100) port 8082 (#0)
@@ -55,12 +58,14 @@ ption":"A Action-Packed Tale of a Man And a Lumberjack who must Reach a Feminist
 { [3 bytes data]
 * Connection #0 to host 192.168.99.100 left intact
 return id：600
+
 -------4-------
-4 测试Post类型的Customer更新接口
+4. 测试Post类型的Customer更新接口
 {"customer_id":600,"store_id":1,"first_name":"MARY","last_name":"SMITH","email":"haha@dd.dd","address_id":5,"active":true,"create_date":"2006-02-14 22:04:36","last_update":"2006-02-15 04:57:20"}
 update successs
+
 -------5-------
-5 测试delete类型的Customer删除接口
+5. 测试delete类型的Customer删除接口
 * timeout on name lookup is not supported
 *   Trying 192.168.99.100...
 * Connected to 192.168.99.100 (192.168.99.100) port 8082 (#0)
