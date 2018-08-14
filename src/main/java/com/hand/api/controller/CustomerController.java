@@ -56,20 +56,9 @@ public class CustomerController {
      */
     @RequestMapping(value = "/update")
     @ResponseBody
-    public String update(Customer c){
+    public Customer update(Customer c){
         int id = customerService.update(c);
-        return String.valueOf(id);
-    }
-
-
-    /*
-    获取最新插入的用户ID
-     */
-    @RequestMapping(value = "/getId")
-    @ResponseBody
-    public String getId(){
-        int id = customerService.getId();
-        return String.valueOf(id);
+        return c;
     }
 
 }
